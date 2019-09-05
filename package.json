@@ -8,8 +8,10 @@
     "transpile": "babel src -d dist --copy-files --ignore src/*.scss",
     "prepublishOnly": "npm run transpile",
     "build": "webpack --mode production",
-    "deploy": "gh-pages -d examples/dist",
-    "publish-demo": "npm run build && npm run deploy"
+    "deploy": "gh-pages -d storybook-static",
+    "publish-demo": "npm run build-storybook && npm run deploy",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
   },
   "homepage": "https://github.com/samuelbeard/react-components#readme",
   "dependencies": {
+    "@storybook/preset-scss": "^1.0.2",
     "classnames": "^2.2.6"
   },
   "devDependencies": {
@@ -35,6 +38,10 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@samuelbeard/grid": "^0.1.0",
+    "@storybook/addon-actions": "^5.1.11",
+    "@storybook/addon-links": "^5.1.11",
+    "@storybook/addons": "^5.1.11",
+    "@storybook/react": "^5.1.11",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
     "gh-pages": "^2.1.1",

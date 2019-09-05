@@ -3,3 +3,7 @@ examples
 .babelrc
 .gitignore
 webpack.config.js
+.storybook
+stories
+**/*.stories.js
+storybook-static
