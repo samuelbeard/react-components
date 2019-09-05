@@ -18,8 +18,14 @@ const Card = ({ children, background, color }) => {
 
 Card.propTypes = {
     children: PropTypes.node.isRequired,
+    /** Background color */
     background: PropTypes.string,
+    /** Colour of the text */
     color: PropTypes.string,
+}
+
+Card.defaultProps = {
+    background: '#ffffff'
 }
 
 export default Card

@@ -16,20 +16,15 @@ export const Col = ({ centered, col, sm, md, lg, xl, ...props }) => {
     )}>{props.children}</div>
 }
 
-Col.displayName = 'Column'
 Col.propTypes = {
     children: PropTypes.node.isRequired,
+    /** Pass className into the div. */
     className: PropTypes.string,
-    /** 1 - 12 */
     col: PropTypes.oneOf(['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', 'auto']),
-    /** 1 - 12 */
-    sm: PropTypes.string,
-    /** 1 - 12 */
-    md: PropTypes.string,
-    /** 1 - 12 */
-    lg: PropTypes.string,
-    /** 1 - 12 */
-    xl: PropTypes.string,
+    sm: PropTypes.oneOf(['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', 'auto']),
+    md: PropTypes.oneOf(['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', 'auto']),
+    lg: PropTypes.oneOf(['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', 'auto']),
+    xl: PropTypes.oneOf(['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', 'auto']),
     centered: PropTypes.bool,
 }
 Col.defaultProps = {

@@ -12,9 +12,8 @@ export const Row = ({ className, children, ...props }) => (
     </div>
 )
 
-Row.displayName = 'Row'
-
 Row.propTypes = {
+    /** Pass className into the div. */
     className: PropTypes.string,
     children: PropTypes.node.isRequired,
 }

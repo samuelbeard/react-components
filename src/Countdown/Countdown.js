@@ -32,6 +32,7 @@ const Countdown = ({ date, d, h, m, s, style, className, daysText, hoursText, mi
 }
 
 Countdown.propTypes = {
+    /** Date to count down to. */
     date: PropTypes.any,
     d: PropTypes.bool,
     h: PropTypes.bool,
