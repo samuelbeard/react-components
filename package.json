@@ -1,0 +1,56 @@
+{
+  "name": "@samuelbeard/react-components",
+  "version": "0.0.1",
+  "description": "Components for React",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "node-sass src/styles.scss src/styles.css",
+    "start": "webpack-dev-server --mode development",
+    "transpile": "babel src -d dist --copy-files --ignore src/*.scss",
+    "prepublishOnly": "npm run compile && npm run transpile",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d examples/dist",
+    "publish-demo": "npm run build && npm run deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelbeard/react-components.git"
+  },
+  "keywords": [
+    "card",
+    "react",
+    "css"
+  ],
+  "author": "samuelbeard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuelbeard/react-components/issues"
+  },
+  "homepage": "https://github.com/samuelbeard/react-components#readme",
+  "dependencies": {
+    "classnames": "^2.2.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@samuelbeard/grid": "^0.1.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "gh-pages": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  }
+}
