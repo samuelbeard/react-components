@@ -20,12 +20,36 @@ Import the package
 import { Countdown } from '@samuelbeard/countdown'
 ```
 
+Import the scss into your own scss
+
+```scss
+@import '~@samuelbeard/react-components/src/scss/base.scss';
+```
+
 ---
 
-### Usage
+## Styling
 
-Check out the examples at https://samuelbeard.github.io/countdown/.
+Colours are organised by their color names. (`red`, `blue`, etc)
 
-```jsx
-<Countdown d h m s date={new Date('2022/09/04 17:00').getTime()} />
-```
+---
+
+## Components
+
+| Component  | className | background | color | size | ...props | PropTypes | defaultProps | stories |
+| ---------- | --------- | ---------- | ----- | ---- | -------- | --------- | ------------ | ------- |
+| Button     | ✅        | ✅         | ✅    | ✅   | ✅       | ✅        | ✅           | ✅      |
+| Card       | ✅        | ✅         | ✅    | ❎   | ✅       | ✅        | ✅           | ✅      |
+| CardHeader | ✅        | ✅         | ✅    | ❎   | ✅       | ✅        | ✅           | ✅      |
+| CardBody   | ✅        | ✅         | ✅    | ❎   | ✅       | ✅        | ✅           | ✅      |
+| CardFooter | ✅        | ✅         | ✅    | ❎   | ✅       | ✅        | ✅           | ✅      |
+| Countdown  |           |            |       |      |          |           |              |         |
+| Container  |           |            |       |      |          |           |              |         |
+| Row        |           |            |       |      |          |           |              |         |
+| Col        |           |            |       |      |          |           |              |         |
+
+---
+
+## Improvements
+
+-   Add images to `Card`s.

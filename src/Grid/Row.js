@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
-import './style.scss'
 
 export const Row = ({ className, children, ...props }) => (
     <div className={cn(

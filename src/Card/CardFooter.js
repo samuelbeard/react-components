@@ -1,13 +1,30 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import cn from 'classnames'
 
-const CardFooter = ({ children, background, color }) => {
-
+const CardFooter = ({ children, background, color, className, ...props }) => {
     return (
-        <div className='sb-card-footer' style={{
-            backgroundColor: background ? background : '#f7f7f7',
-            color: color ? color : '#333333'
-        }}>{ children }</div>
+        <div
+            {...props}
+            className={cn(`sb-card-footer`, `color-${color}`, `bg-${background}`)}
+        >
+            {children}
+        </div>
     )
+}
+
+CardFooter.propTypes = {
+    className: PropTypes.string,
+    children: PropTypes.node.isRequired,
+    /** Background color */
+    background: PropTypes.string,
+    /** Colour of the text */
+    color: PropTypes.string,
+}
+
+CardFooter.defaultProps = {
+    color: 'default',
+    background: 'shade',
 }
 
 export default CardFooter

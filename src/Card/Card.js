@@ -1,15 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './styles.scss'
+import cn from 'classnames'
 
-const Card = ({ children, background, color }) => {
+const Card = ({ children, background, color, className, ...props }) => {
     return (
         <div
-            className='sb-card'
-            style={{
-                backgroundColor: background ? background : '#ffffff',
-                color: color ? color : 'inherit',
-            }}
+            {...props}
+            className={cn(`sb-card`, `color-${color}`, `bg-${background}`, className)}
         >
             {children}
         </div>
@@ -17,6 +14,7 @@ const Card = ({ children, background, color }) => {
 }
 
 Card.propTypes = {
+    className: PropTypes.string,
     children: PropTypes.node.isRequired,
     /** Background color */
     background: PropTypes.string,
@@ -25,7 +23,8 @@ Card.propTypes = {
 }
 
 Card.defaultProps = {
-    background: '#ffffff'
+    color: 'default',
+    background: 'white'
 }
 
 export default Card

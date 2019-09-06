@@ -1,0 +1,103 @@
+.sb-button {
+    $base-padding-x: 10px;
+    $base-padding-y: 20px;
+
+    border: none;
+    border-radius: $base-border-radius;
+    transition: $base-transition;
+    text-decoration: none;
+    box-shadow: $base-shadow;
+
+    &.pointer {
+        cursor: pointer;
+    }
+
+    &.block {
+        display: block;
+        width: 100%;
+    }
+
+    &:focus {
+        box-shadow: 0 0 1px 2px rgb(59, 59, 59);
+    }
+
+    &.bg-default {
+        &:hover {
+            background-color: darken($color: $color-default, $amount: 10%);
+        }
+
+        &:active {
+            box-shadow: 0 0 10px $color-default;
+        }
+    }
+    &.bg-blue {
+        &:hover {
+            background-color: darken($color: $color-blue, $amount: 10%);
+        }
+
+        &:active {
+            box-shadow: 0 0 10px $color-blue;
+        }
+    }
+    &.bg-green {
+        &:hover {
+            background-color: darken($color: $color-green, $amount: 10%);
+        }
+
+        &:active {
+            box-shadow: 0 0 10px $color-green;
+        }
+    }
+    &.bg-red {
+        &:hover {
+            background-color: darken($color: $color-red, $amount: 10%);
+        }
+
+        &:active {
+            box-shadow: 0 0 10px $color-red;
+        }
+    }
+    &.bg-orange {
+        &:hover {
+            background-color: darken($color: $color-orange, $amount: 10%);
+        }
+
+        &:active {
+            box-shadow: 0 0 10px $color-orange;
+        }
+    }
+    &.bg-yellow {
+        &:hover {
+            background-color: darken($color: $color-yellow, $amount: 10%);
+        }
+
+        &:active {
+            box-shadow: 0 0 10px $color-yellow;
+        }
+    }
+    &.bg-purple {
+        &:hover {
+            background-color: darken($color: $color-purple, $amount: 10%);
+        }
+
+        &:active {
+            box-shadow: 0 0 5px $color-purple;
+        }
+    }
+
+    &.size-sm {
+        padding: $base-padding-x / 1.5 $base-padding-y / 1.5;
+    }
+
+    &.size-default {
+        padding: $base-padding-x $base-padding-y;
+    }
+
+    &.size-lg {
+        padding: $base-padding-x * 1.5 $base-padding-y * 1.5;
+    }
+
+    &.size-xl {
+        padding: $base-padding-x * 3 $base-padding-y * 3;
+    }
+}

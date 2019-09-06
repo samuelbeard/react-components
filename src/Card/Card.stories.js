@@ -3,10 +3,11 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import { Card, CardBody, CardHeader, CardFooter } from './index'
+import { Container, Row, Col } from '../Grid'
 
 storiesOf('Card', module)
     .addDecorator(storyFn => (
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '25px' }}>
             <div style={{ width: '50%' }}>{storyFn()}</div>
         </div>
     ))
@@ -50,19 +51,19 @@ storiesOf('Card', module)
     ))
     .add('Colours', () => (
         <>
-            <Card background='#97efff'>
+            <Card background='blue' color='white'>
                 <CardHeader>Header</CardHeader>
-                <CardBody>This card has a background colour of #97efff.</CardBody>
+                <CardBody>This card has a blue background.</CardBody>
                 <CardFooter>Footer</CardFooter>
             </Card>
             <br />
             <br />
-            <Card background='#333333' color='#ffffff'>
+            <Card background='black' color='white'>
                 <CardBody>This card has a dark background color and a white font. It's only in the body though.</CardBody>
             </Card>
             <br />
             <br />
-            <Card background='#333333' color='#ffffff'>
+            <Card background='black' color='white'>
                 <CardHeader>Header</CardHeader>
                 <CardBody>Headers and footers stay the same.</CardBody>
                 <CardFooter>Footer</CardFooter>
@@ -79,4 +80,25 @@ storiesOf('Card', module)
                 </CardFooter>
             </Card>
         </>
+    ))
+    .add('Grid', () => (
+        <Container>
+            <Row>
+                <Col>
+                    <Card background="red">
+                        <CardBody>This is the card body.</CardBody>
+                    </Card>
+                </Col>
+                <Col>
+                    <Card background="green">
+                        <CardBody>This is the card body.</CardBody>
+                    </Card>
+                </Col>
+                <Col>
+                    <Card background="blue">
+                        <CardBody>This is the card body.</CardBody>
+                    </Card>
+                </Col>
+            </Row>
+        </Container>
     ))

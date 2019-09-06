@@ -1,0 +1,86 @@
+// Global Styling
+// 
+// Use these classes to add these effects to pretty much anything.
+
+* {
+    box-sizing: border-box;
+    font-family: $font-default;
+}
+
+// Backgrounds
+.bg-default {
+    background-color: $color-default !important;
+}
+.bg-blue {
+    background-color: $color-blue !important;
+}
+.bg-green {
+    background-color: $color-green !important;
+}
+.bg-red {
+    background-color: $color-red !important;
+}
+.bg-orange {
+    background-color: $color-orange !important;
+}
+.bg-yellow {
+    background-color: $color-yellow !important;
+}
+.bg-purple {
+    background-color: $color-purple !important;
+}
+.bg-black {
+    background-color: $color-black !important;
+}
+.bg-white {
+    background-color: $color-white !important;
+}
+.bg-shade {
+    background-color: $color-shade !important;
+}
+
+// Text Colour
+.color-default {
+    color: $color-black !important;
+}
+.color-blue {
+    color: $color-blue !important;
+}
+.color-green {
+    color: $color-green !important;
+}
+.color-red {
+    color: $color-red !important;
+}
+.color-orange {
+    color: $color-orange !important;
+}
+.color-yellow {
+    color: $color-yellow !important;
+}
+.color-purple {
+    color: $color-purple !important;
+}
+.color-black {
+    color: $color-black !important;
+}
+.color-white {
+    color: $color-white !important;
+}
+
+// Font Sizes
+.size-sm {
+    font-size: $base-font-size / 1.5;
+}
+
+.size-default {
+    font-size: $base-font-size;
+}
+
+.size-lg {
+    font-size: $base-font-size * 1.5;
+}
+
+.size-xl {
+    font-size: $base-font-size * 3;
+}

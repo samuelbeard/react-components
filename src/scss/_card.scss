@@ -7,20 +7,18 @@ $spacing: 10px;
     min-width: 0;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
-    border-radius: 0.5rem;
-    box-shadow: 0 0 15px 0 #e2e2e2;
+    border-radius: $base-border-radius;
+    box-shadow: $base-shadow;
     word-wrap: break-word;
-    font-size: 1rem;
 
     .sb-card-header {
         margin-bottom: 0;
-        background: #f7f7f7;
         overflow: hidden;
         padding: 0.75rem 1.25rem;
         border-bottom: 1px solid #efefef;
 
         &:first-child {
-            border-radius: calc(0.5rem - 1px) calc(0.5rem - 1px) 0 0;
+            border-radius: $base-border-radius - 1px $base-border-radius - 1px 0 0;
         }
     }
 
@@ -41,13 +39,12 @@ $spacing: 10px;
 
     .sb-card-footer {
         margin-top: 0;
-        background: #f7f7f7;
         overflow: hidden;
         padding: 0.75rem 1.25rem;
         border-top: 1px solid #efefef;
 
         &:last-child {
-            border-radius: 0 0 calc(0.5rem - 1px) calc(0.5rem - 1px);
+            border-radius: 0 0 $base-border-radius - 1px $base-border-radius - 1px;
         }
     }
 }

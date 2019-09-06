@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
-import './style.scss'
 
 export const Container = ({ fluid, className, children, ...props }) => (
-    <div {...props} className={cn(`grid_container`, fluid && `fluid`, className)}>
+    <div {...props} className={cn(`sb-container`, fluid && `fluid`, className)}>
         {children}
     </div>
 )

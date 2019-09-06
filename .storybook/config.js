@@ -1,6 +1,6 @@
 import { configure, addDecorator } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info'
-import './style.css'
+import '../src/scss/base.scss'
 
 addDecorator(withInfo({
   header: false,

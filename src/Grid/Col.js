@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
-import './style.scss'
 
 export const Col = ({ centered, col, sm, md, lg, xl, ...props }) => {
     return <div {...props} className={cn(
