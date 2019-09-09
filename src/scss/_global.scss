@@ -85,9 +85,8 @@
     font-size: $base-font-size * 3;
 }
 
-// Util
-img {
-    &.img-fluid {
-        max-width: 100%;
-    }
+// Misc
+a {
+    color: $anchor-color;
+    text-decoration: $anchor-decoration;
 }

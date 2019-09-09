@@ -1,0 +1,19 @@
+img {
+    &.img-fluid {
+        max-width: 100%;
+    }
+}
+
+.text {
+    &-right {
+        text-align: right;
+    }
+
+    &-left {
+        text-align: left;
+    }
+
+    &-center {
+        text-align: center;
+    }
+}

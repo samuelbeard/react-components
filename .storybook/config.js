@@ -4,7 +4,7 @@ import '../src/scss/base.scss'
 
 addDecorator(withInfo({
   header: false,
-  source: false,
+  source: true,
   inline: true,
 }))
 

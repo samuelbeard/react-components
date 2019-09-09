@@ -48,6 +48,9 @@ Colours are organised by their color names. (`red`, `blue`, etc)
 | Row        |           |            |       |      |          |           |              |         |          |
 | Col        |           |            |       |      |          |           |              |         |          |
 | Section    | ✅        | ✅         | ✅    | ❎   | ✅       |           |              | ✅      | ✅       |
+| Nav        | ✅        | ✅         | ✅    | ❎   | ✅       | ✅        | ✅           | ✅      | ✅       |
+| NavTitle   | ✅        | ❎         | ✅    | ❎   | ✅       | ✅        | ❎           | ✅      | ✅       |
+| NavMenu    | ✅        | ❎         | ✅    | ❎   | ✅       | ✅        | ❎           | ✅      | ✅       |
 
 ---
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-import { Section } from './index'
+import Section from './index'
 import { Row, Col } from '../Grid'
 
 storiesOf('Section', module)

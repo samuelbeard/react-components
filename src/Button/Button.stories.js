@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions'
 
 import { storiesOf } from '@storybook/react'
 
-import { Button } from './index'
+import Button from './index'
 
 storiesOf('Button', module)
     .addDecorator(storyFn => <div style={{ textAlign: 'center', marginTop: '25px' }}>{storyFn()}</div>)
