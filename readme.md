@@ -36,20 +36,21 @@ Colours are organised by their color names. (`red`, `blue`, etc)
 
 ## Components
 
-| Component  | className | background | color | size | ...props | PropTypes | defaultProps | stories |
-| ---------- | --------- | ---------- | ----- | ---- | -------- | --------- | ------------ | ------- |
-| Button     | ✅        | ✅         | ✅    | ✅   | ✅       | ✅        | ✅           | ✅      |
-| Card       | ✅        | ✅         | ✅    | ❎   | ✅       | ✅        | ✅           | ✅      |
-| CardHeader | ✅        | ✅         | ✅    | ❎   | ✅       | ✅        | ✅           | ✅      |
-| CardBody   | ✅        | ✅         | ✅    | ❎   | ✅       | ✅        | ✅           | ✅      |
-| CardFooter | ✅        | ✅         | ✅    | ❎   | ✅       | ✅        | ✅           | ✅      |
-| Countdown  |           |            |       |      |          |           |              |         |
-| Container  |           |            |       |      |          |           |              |         |
-| Row        |           |            |       |      |          |           |              |         |
-| Col        |           |            |       |      |          |           |              |         |
+| Component  | className | background | color | size | ...props | PropTypes | defaultProps | stories | ...style |
+| ---------- | --------- | ---------- | ----- | ---- | -------- | --------- | ------------ | ------- | -------- |
+| Button     | ✅        | ✅         | ✅    | ✅   | ✅       | ✅        | ✅           | ✅      |          |
+| Card       | ✅        | ✅         | ✅    | ❎   | ✅       | ✅        | ✅           | ✅      |          |
+| CardHeader | ✅        | ✅         | ✅    | ❎   | ✅       | ✅        | ✅           | ✅      |          |
+| CardBody   | ✅        | ✅         | ✅    | ❎   | ✅       | ✅        | ✅           | ✅      |          |
+| CardFooter | ✅        | ✅         | ✅    | ❎   | ✅       | ✅        | ✅           | ✅      |          |
+| Countdown  |           |            |       |      |          |           |              |         |          |
+| Container  |           |            |       |      |          |           |              |         |          |
+| Row        |           |            |       |      |          |           |              |         |          |
+| Col        |           |            |       |      |          |           |              |         |          |
+| Section    | ✅        | ✅         | ✅    | ❎   | ✅       |           |              | ✅      | ✅       |
 
 ---
 
 ## Improvements
 
--   Add images to `Card`s.
+-   Add `CardImage` to `Card`s.
