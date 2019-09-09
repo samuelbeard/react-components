@@ -73,6 +73,10 @@ body {
 }
 
 // Font Sizes
+p {
+    font-size: $base-font-size;
+}
+
 .size-sm {
     font-size: $base-font-size / 1.5;
 }
