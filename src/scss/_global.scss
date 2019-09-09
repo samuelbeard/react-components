@@ -84,3 +84,10 @@
 .size-xl {
     font-size: $base-font-size * 3;
 }
+
+// Util
+img {
+    &.img-fluid {
+        max-width: 100%;
+    }
+}
