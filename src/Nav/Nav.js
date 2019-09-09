@@ -5,7 +5,16 @@ import { Container } from '../Grid'
 
 const Nav = ({ children, background, color, className, style, ...props }) => {
     return (
-        <div style={{...style}} {...props} className={cn(`sb-nav`, `color-${color}`, `bg-${background}`, className)}>
+        <div
+            style={{ ...style }}
+            {...props}
+            className={cn(
+                `sb-nav`,
+                `color-${color}`,
+                `bg-${background}`,
+                className
+            )}
+        >
             <Container>{children}</Container>
         </div>
     )

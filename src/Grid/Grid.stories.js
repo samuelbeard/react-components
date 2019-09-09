@@ -116,62 +116,62 @@ storiesOf('Grid', module)
 
             <Container>
                 <Row>
-                    <Col col='1' style={{ background: 'Orange' }}>
+                    <Col col="1" style={{ background: 'Orange' }}>
                         1
                     </Col>
                 </Row>
                 <Row>
-                    <Col col='2' style={{ background: 'SpringGreen' }}>
+                    <Col col="2" style={{ background: 'SpringGreen' }}>
                         2
                     </Col>
                 </Row>
                 <Row>
-                    <Col col='3' style={{ background: 'Orange' }}>
+                    <Col col="3" style={{ background: 'Orange' }}>
                         3
                     </Col>
                 </Row>
                 <Row>
-                    <Col col='4' style={{ background: 'SpringGreen' }}>
+                    <Col col="4" style={{ background: 'SpringGreen' }}>
                         4
                     </Col>
                 </Row>
                 <Row>
-                    <Col col='5' style={{ background: 'Orange' }}>
+                    <Col col="5" style={{ background: 'Orange' }}>
                         5
                     </Col>
                 </Row>
                 <Row>
-                    <Col col='6' style={{ background: 'SpringGreen' }}>
+                    <Col col="6" style={{ background: 'SpringGreen' }}>
                         6
                     </Col>
                 </Row>
                 <Row>
-                    <Col col='7' style={{ background: 'Orange' }}>
+                    <Col col="7" style={{ background: 'Orange' }}>
                         7
                     </Col>
                 </Row>
                 <Row>
-                    <Col col='8' style={{ background: 'SpringGreen' }}>
+                    <Col col="8" style={{ background: 'SpringGreen' }}>
                         8
                     </Col>
                 </Row>
                 <Row>
-                    <Col col='9' style={{ background: 'Orange' }}>
+                    <Col col="9" style={{ background: 'Orange' }}>
                         9
                     </Col>
                 </Row>
                 <Row>
-                    <Col col='10' style={{ background: 'SpringGreen' }}>
+                    <Col col="10" style={{ background: 'SpringGreen' }}>
                         10
                     </Col>
                 </Row>
                 <Row>
-                    <Col col='11' style={{ background: 'Orange' }}>
+                    <Col col="11" style={{ background: 'Orange' }}>
                         11
                     </Col>
                 </Row>
                 <Row>
-                    <Col col='12' style={{ background: 'SpringGreen' }}>
+                    <Col col="12" style={{ background: 'SpringGreen' }}>
                         12
                     </Col>
                 </Row>
@@ -181,45 +181,45 @@ storiesOf('Grid', module)
 
             <Container>
                 <Row>
-                    <Col col='1' sm='12' md='1' lg='12' xl='1' className='tre'>
+                    <Col col="1" sm="12" md="1" lg="12" xl="1" className="tre">
                         1
                     </Col>
-                    <Col col='11'>11</Col>
+                    <Col col="11">11</Col>
                 </Row>
                 <Row>
-                    <Col col='2'>2</Col>
-                    <Col col='4'>4</Col>
-                    <Col col='6'>6</Col>
+                    <Col col="2">2</Col>
+                    <Col col="4">4</Col>
+                    <Col col="6">6</Col>
                 </Row>
                 <Row>
-                    <Col col='3'>3</Col>
+                    <Col col="3">3</Col>
                 </Row>
                 <Row>
-                    <Col col='4'>4</Col>
+                    <Col col="4">4</Col>
                 </Row>
                 <Row>
-                    <Col col='5'>5</Col>
+                    <Col col="5">5</Col>
                 </Row>
                 <Row>
-                    <Col col='6'>6</Col>
+                    <Col col="6">6</Col>
                 </Row>
                 <Row>
-                    <Col col='7'>7</Col>
+                    <Col col="7">7</Col>
                 </Row>
                 <Row>
-                    <Col col='8'>8</Col>
+                    <Col col="8">8</Col>
                 </Row>
                 <Row>
-                    <Col col='9'>9</Col>
+                    <Col col="9">9</Col>
                 </Row>
                 <Row>
-                    <Col col='10'>10</Col>
+                    <Col col="10">10</Col>
                 </Row>
                 <Row>
-                    <Col col='11'>11</Col>
+                    <Col col="11">11</Col>
                 </Row>
                 <Row>
-                    <Col col='12'>12</Col>
+                    <Col col="12">12</Col>
                 </Row>
             </Container>
         </>
@@ -227,9 +227,9 @@ storiesOf('Grid', module)
     .add('No Col Numbers', () => (
         <Container>
             <Row>
-                <Col style={{ background: 'SpringGreen'}} >One</Col>
-                <Col style={{ background: 'Orange'}} >Two</Col>
-                <Col style={{ background: 'SpringGreen'}} >Three</Col>
+                <Col style={{ background: 'SpringGreen' }}>One</Col>
+                <Col style={{ background: 'Orange' }}>Two</Col>
+                <Col style={{ background: 'SpringGreen' }}>Three</Col>
             </Row>
         </Container>
     ))

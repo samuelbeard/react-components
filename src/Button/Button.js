@@ -2,13 +2,49 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
 
-const Button = ({ onClick, className, background, color, to, newTab, block, size, children, ...props }) => {
+const Button = ({
+    onClick,
+    className,
+    background,
+    color,
+    to,
+    newTab,
+    block,
+    size,
+    children,
+    ...props
+}) => {
     return to ? (
-        <a {...props} href={to} className={cn(`sb-button`, `color-${color}`, `bg-${background}`, className, `pointer`, block && 'block', `size-${size}`)} target={newTab && '_blank'}>
+        <a
+            {...props}
+            href={to}
+            className={cn(
+                `sb-button`,
+                `color-${color}`,
+                `bg-${background}`,
+                className,
+                `pointer`,
+                block && 'block',
+                `size-${size}`
+            )}
+            target={newTab && '_blank'}
+        >
             {children}
         </a>
     ) : (
-        <button {...props} onClick={onClick} className={cn(`sb-button`, `color-${color}`, `bg-${background}`, className, onClick && 'pointer', block && 'block', `size-${size}`)}>
+        <button
+            {...props}
+            onClick={onClick}
+            className={cn(
+                `sb-button`,
+                `color-${color}`,
+                `bg-${background}`,
+                className,
+                onClick && 'pointer',
+                block && 'block',
+                `size-${size}`
+            )}
+        >
             {children}
         </button>
     )
@@ -28,13 +64,13 @@ Button.propTypes = {
     /** Button will be 100% width. */
     block: PropTypes.bool,
     /** Size of the button. Default is default size. */
-    size: PropTypes.oneOf(['sm', 'default', 'lg', 'xl'])
+    size: PropTypes.oneOf(['sm', 'default', 'lg', 'xl']),
 }
 
 Button.defaultProps = {
     color: 'white',
     background: 'default',
-    size: 'default'
+    size: 'default',
 }
 
 export default Button

@@ -6,7 +6,11 @@ const CardHeader = ({ children, background, color, className, ...props }) => {
     return (
         <div
             {...props}
-            className={cn(`sb-card-header`, `color-${color}`, `bg-${background}`)}
+            className={cn(
+                `sb-card-header`,
+                `color-${color}`,
+                `bg-${background}`
+            )}
         >
             {children}
         </div>

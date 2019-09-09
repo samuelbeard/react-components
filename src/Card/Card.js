@@ -6,7 +6,12 @@ const Card = ({ children, background, color, className, ...props }) => {
     return (
         <div
             {...props}
-            className={cn(`sb-card`, `color-${color}`, `bg-${background}`, className)}
+            className={cn(
+                `sb-card`,
+                `color-${color}`,
+                `bg-${background}`,
+                className
+            )}
         >
             {children}
         </div>
@@ -24,7 +29,7 @@ Card.propTypes = {
 
 Card.defaultProps = {
     color: 'default',
-    background: 'white'
+    background: 'white',
 }
 
 export default Card

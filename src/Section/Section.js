@@ -3,15 +3,30 @@ import PropTypes from 'prop-types'
 import cn from 'classnames'
 import { Container } from '../Grid'
 
-const Section = ({ children, className, fluid, background, color, padding, fullHeight, style, ...props }) => {
+const Section = ({
+    children,
+    className,
+    fluid,
+    background,
+    color,
+    padding,
+    fullHeight,
+    style,
+    ...props
+}) => {
     return (
         <div
             {...props}
-            className={cn('sb-section', `bg-${background}`, `color-${color}`, className)}
+            className={cn(
+                'sb-section',
+                `bg-${background}`,
+                `color-${color}`,
+                className
+            )}
             style={{
                 padding: `${padding}px`,
                 height: fullHeight ? '100vh' : 'auto',
-                ...style
+                ...style,
             }}
         >
             <Container fuid={fluid}>{children}</Container>

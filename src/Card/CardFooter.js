@@ -6,7 +6,11 @@ const CardFooter = ({ children, background, color, className, ...props }) => {
     return (
         <div
             {...props}
-            className={cn(`sb-card-footer`, `color-${color}`, `bg-${background}`)}
+            className={cn(
+                `sb-card-footer`,
+                `color-${color}`,
+                `bg-${background}`
+            )}
         >
             {children}
         </div>

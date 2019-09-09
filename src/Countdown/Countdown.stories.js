@@ -16,8 +16,16 @@ storiesOf('Countdown', module)
         </>
     ))
     .add('Styled', () => (
-        <Countdown d date={new Date('2020/09/04 17:00').getTime()} style={{ fontSize: '30px' }} />
+        <Countdown
+            d
+            date={new Date('2020/09/04 17:00').getTime()}
+            style={{ fontSize: '30px' }}
+        />
     ))
     .add('Custom Label', () => (
-        <Countdown d daysText='ddaaayyss' date={new Date('2020/09/04 17:00').getTime()} />
+        <Countdown
+            d
+            daysText="ddaaayyss"
+            date={new Date('2020/09/04 17:00').getTime()}
+        />
     ))

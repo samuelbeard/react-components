@@ -7,7 +7,13 @@ import { Container, Row, Col } from '../Grid'
 
 storiesOf('Card', module)
     .addDecorator(storyFn => (
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '25px' }}>
+        <div
+            style={{
+                display: 'flex',
+                justifyContent: 'center',
+                marginTop: '25px',
+            }}
+        >
             <div style={{ width: '50%' }}>{storyFn()}</div>
         </div>
     ))
@@ -39,31 +45,40 @@ storiesOf('Card', module)
             <br />
             <Card>
                 <CardHeader>Header</CardHeader>
-                <CardBody>Hello there everyone. This is the card with only a header and body.</CardBody>
+                <CardBody>
+                    Hello there everyone. This is the card with only a header
+                    and body.
+                </CardBody>
             </Card>
             <br />
             <br />
             <Card>
-                <CardBody>Hello there everyone. This is a card with only a footer and body.</CardBody>
+                <CardBody>
+                    Hello there everyone. This is a card with only a footer and
+                    body.
+                </CardBody>
                 <CardFooter>Footer</CardFooter>
             </Card>
         </>
     ))
     .add('Colours', () => (
         <>
-            <Card background='blue' color='white'>
+            <Card background="blue" color="white">
                 <CardHeader>Header</CardHeader>
                 <CardBody>This card has a blue background.</CardBody>
                 <CardFooter>Footer</CardFooter>
             </Card>
             <br />
             <br />
-            <Card background='black' color='white'>
-                <CardBody>This card has a dark background color and a white font. It's only in the body though.</CardBody>
+            <Card background="black" color="white">
+                <CardBody>
+                    This card has a dark background color and a white font. It's
+                    only in the body though.
+                </CardBody>
             </Card>
             <br />
             <br />
-            <Card background='black' color='white'>
+            <Card background="black" color="white">
                 <CardHeader>Header</CardHeader>
                 <CardBody>Headers and footers stay the same.</CardBody>
                 <CardFooter>Footer</CardFooter>
@@ -71,11 +86,11 @@ storiesOf('Card', module)
             <br />
             <br />
             <Card>
-                <CardHeader background='red' color='white'>
+                <CardHeader background="red" color="white">
                     Header
                 </CardHeader>
                 <CardBody>You can even colour the header and footer.</CardBody>
-                <CardFooter background='blue' color='white'>
+                <CardFooter background="blue" color="white">
                     Footer
                 </CardFooter>
             </Card>
