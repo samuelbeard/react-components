@@ -1,3 +1,3 @@
 import Countdown from './Countdown'
 
-export { Countdown }
+export default Countdown

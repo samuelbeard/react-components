@@ -8,7 +8,6 @@
     "transpile": "babel src -d dist --copy-files --ignore src/*.scss",
     "prepublishOnly": "npm run transpile",
     "postpublish": "npm run publish-demo",
-    "build": "webpack --mode production",
     "deploy": "gh-pages -d storybook-static",
     "publish-demo": "npm run build-storybook && npm run deploy",
     "storybook": "start-storybook -p 6006",

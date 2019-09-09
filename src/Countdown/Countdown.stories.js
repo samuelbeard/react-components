@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-import { Countdown } from './index'
+import Countdown from './index'
 
 storiesOf('Countdown', module)
     .addDecorator(storyFn => (
