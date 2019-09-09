@@ -7,6 +7,10 @@
     font-family: $font-default;
 }
 
+body {
+    margin: 0;
+}
+
 // Backgrounds
 .bg-default {
     background-color: $color-default !important;
