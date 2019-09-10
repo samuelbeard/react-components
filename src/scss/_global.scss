@@ -1,5 +1,5 @@
 // Global Styling
-// 
+//
 // Use these classes to add these effects to pretty much anything.
 
 * {
@@ -74,6 +74,36 @@ body {
 
 // Font Sizes
 p {
+    font-size: $base-font-size;
+}
+h1 {
+    font-size: $base-font-size * 2.5;
+    &.big {
+        font-size: 6rem;
+    }
+}
+h2 {
+    font-size: $base-font-size * 2;
+    &.big {
+        font-size: 5.5rem;
+    }
+}
+h3 {
+    font-size: $base-font-size * 1.75;
+    &.big {
+        font-size: 4.5rem;
+    }
+}
+h4 {
+    font-size: $base-font-size * 1.5;
+    &.big {
+        font-size: 3.5rem;
+    }
+}
+h5 {
+    font-size: $base-font-size * 1.25;
+}
+h6 {
     font-size: $base-font-size;
 }
 
