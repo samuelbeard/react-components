@@ -12,7 +12,8 @@
     "publish-demo": "npm run build-storybook && npm run deploy",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "format": "prettier --write src/**/*.{js,jsx}"
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "patch:publish": "npm version patch && npm publish && git push"
   },
   "repository": {
     "type": "git",
