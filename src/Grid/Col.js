@@ -7,12 +7,12 @@ export const Col = ({ centered, col, sm, md, lg, xl, ...props }) => {
         <div
             {...props}
             className={cn(
-                `col`,
-                col ? `col_${col}` : undefined,
-                sm ? `col_sm_${sm}` : undefined,
-                md ? `col_md_${md}` : undefined,
-                lg ? `col_lg_${lg}` : undefined,
-                xl ? `col_xl_${xl}` : undefined,
+                `sb-col`,
+                col ? `sb-col_${col}` : undefined,
+                sm ? `sb-col_sm_${sm}` : undefined,
+                md ? `sb-col_md_${md}` : undefined,
+                lg ? `sb-col_lg_${lg}` : undefined,
+                xl ? `sb-col_xl_${xl}` : undefined,
                 centered ? 'centered' : undefined,
                 props.className
             )}

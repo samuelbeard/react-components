@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import cn from 'classnames'
 
 export const Row = ({ className, children, ...props }) => (
-    <div className={cn(`row`, className)} {...props}>
+    <div className={cn(`sb-row`, className)} {...props}>
         {children}
     </div>
 )
