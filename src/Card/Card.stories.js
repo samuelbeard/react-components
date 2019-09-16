@@ -2,7 +2,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 
-import { Card, CardBody, CardHeader, CardFooter } from './index'
+import { Card, CardBody, CardHeader, CardFooter } from '../index'
 import { Container, Row, Col } from '../Grid'
 
 storiesOf('Card', module)

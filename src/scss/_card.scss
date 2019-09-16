@@ -11,6 +11,10 @@ $spacing: 10px;
     box-shadow: $base-shadow;
     word-wrap: break-word;
 
+    img {
+        border-radius: $base-border-radius - 1px;
+    }
+
     .sb-card-header {
         margin-bottom: 0;
         overflow: hidden;
