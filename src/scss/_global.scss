@@ -123,6 +123,35 @@ h6 {
     font-size: $base-font-size * 3;
 }
 
+// Border Colour
+.border-default {
+    border-color: $color-black !important;
+}
+.border-blue {
+    border-color: $color-blue !important;
+}
+.border-green {
+    border-color: $color-green !important;
+}
+.border-red {
+    border-color: $color-red !important;
+}
+.border-orange {
+    border-color: $color-orange !important;
+}
+.border-yellow {
+    border-color: $color-yellow !important;
+}
+.border-purple {
+    border-color: $color-purple !important;
+}
+.border-black {
+    border-color: $color-black !important;
+}
+.border-white {
+    border-color: $color-white !important;
+}
+
 // Misc
 a {
     color: $anchor-color;
