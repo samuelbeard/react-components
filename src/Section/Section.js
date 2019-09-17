@@ -7,6 +7,7 @@ const Section = ({
     children,
     className,
     containerClassName,
+    containerStyle,
     fluid,
     background,
     color,
@@ -30,7 +31,7 @@ const Section = ({
                 ...style,
             }}
         >
-            <Container className={cn(containerClassName)} fluid={fluid}>{children}</Container>
+            <Container style={{...containerStyle}} className={cn(containerClassName)} fluid={fluid}>{children}</Container>
         </div>
     )
 }
@@ -41,6 +42,7 @@ Section.propTypes = {
     className: PropTypes.string,
     /** classes passed to the container */
     containerClassName: PropTypes.string,
+    containerStyle: PropTypes.any,
     background: PropTypes.string,
     color: PropTypes.string,
     /** Padding at the top and bottom of the section in pixels */
