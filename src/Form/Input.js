@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
 
-const Field = ({ className, color, type, border, ...props }) => {
+const Input = ({ className, color, type, border, ...props }) => {
     switch (type) {
         case 'select':
             return (
                 <Select
                     className={cn(
-                        `sb-field`,
+                        `sb-input`,
                         `color-${color}`,
                         `border-${border}`,
                         className
@@ -19,7 +19,7 @@ const Field = ({ className, color, type, border, ...props }) => {
             return (
                 <TextArea
                     className={cn(
-                        `sb-field`,
+                        `sb-input`,
                         `color-${color}`,
                         `border-${border}`,
                         className
@@ -31,7 +31,7 @@ const Field = ({ className, color, type, border, ...props }) => {
                 <input
                     {...props}
                     className={cn(
-                        `sb-field`,
+                        `sb-input`,
                         `color-${color}`,
                         `border-${border}`,
                         className
@@ -42,19 +42,20 @@ const Field = ({ className, color, type, border, ...props }) => {
     }
 }
 
-Field.propTypes = {
+Input.propTypes = {
     className: PropTypes.string,
     color: PropTypes.string,
     border: PropTypes.string,
     type: PropTypes.oneOf(['text', 'textarea', 'select', 'email', 'password']),
 }
 
-Field.defaultProps = {
+Input.defaultProps = {
+    type: 'text',
     color: 'black',
-    border: 'shade',
+    border: 'white',
 }
 
-export default Field
+export default Input
 
 /**
  * To Do

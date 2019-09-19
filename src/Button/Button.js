@@ -2,75 +2,67 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
 
-const Button = ({
-    onClick,
-    className,
-    background,
-    color,
-    to,
-    newTab,
-    block,
-    size,
-    children,
-    ...props
-}) => {
-    return to ? (
+const Button = props => {
+    return props.to ? (
         <a
             {...props}
-            href={to}
+            href={props.to}
             className={cn(
                 `sb-button`,
-                `color-${color}`,
-                `bg-${background}`,
-                className,
+                `color-${props.color}`,
+                `bg-${props.background}`,
+                props.className,
                 `pointer`,
-                block && 'block',
-                `size-${size}`
+                props.block && 'block',
+                `size-${props.size}`
             )}
-            target={newTab && '_blank'}
+            target={props.newTab && '_blank'}
+            style={props.style}
         >
-            {children}
+            {props.children}
         </a>
     ) : (
         <button
             {...props}
-            onClick={onClick}
+            onClick={props.onClick}
             className={cn(
                 `sb-button`,
-                `color-${color}`,
-                `bg-${background}`,
-                className,
-                onClick && 'pointer',
-                block && 'block',
-                `size-${size}`
+                `color-${props.color}`,
+                `bg-${props.background}`,
+                props.className,
+                props.onClick && 'pointer',
+                props.block && 'block',
+                `size-${props.size}`
             )}
+            style={props.style}
         >
-            {children}
+            {props.children}
         </button>
     )
 }
 
 Button.propTypes = {
-    /** Pass a function to the button. */
-    onClick: PropTypes.func,
-    className: PropTypes.string,
-    background: PropTypes.string,
-    color: PropTypes.string,
-    children: PropTypes.node.isRequired,
-    /** A url or uri that the button will link to. */
-    to: PropTypes.string,
-    /** Open a new tab on click. Only works with a `to` prop. */
-    newTab: PropTypes.bool,
     /** Button will be 100% width. */
     block: PropTypes.bool,
+    /** Open a new tab on click. Only works with a `to` prop. */
+    newTab: PropTypes.bool,
+    /** A url or uri that the button will link to. */
+    to: PropTypes.string,
     /** Size of the button. Default is default size. */
     size: PropTypes.oneOf(['sm', 'default', 'lg', 'xl']),
+    /** Pass a function to the button. */
+    onClick: PropTypes.func,
+    color: PropTypes.string,
+    background: PropTypes.string,
+    className: PropTypes.string,
+    style: PropTypes.object,
+    children: PropTypes.node.isRequired,
 }
 
 Button.defaultProps = {
+    size: 'default',
     color: 'white',
     background: 'default',
-    size: 'default',
 }
 
 export default Button

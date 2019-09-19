@@ -1,4 +1,6 @@
-import Field from './Field'
+import Input from './Input'
 import Form from './Form'
+import InputGroup from './InputGroup'
+import Label from './Label'
 
-export { Form, Field }
+export { Form, Input, InputGroup, Label }

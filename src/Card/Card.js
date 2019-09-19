@@ -2,29 +2,27 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
 
-const Card = ({ children, background, color, className, ...props }) => {
+const Card = props => {
     return (
         <div
             {...props}
             className={cn(
                 `sb-card`,
-                `color-${color}`,
-                `bg-${background}`,
-                className
+                `color-${props.color}`,
+                `bg-${props.background}`,
+                props.className
             )}
         >
-            {children}
+            {props.children}
         </div>
     )
 }
 
 Card.propTypes = {
+    color: PropTypes.string,
+    background: PropTypes.string,
     className: PropTypes.string,
     children: PropTypes.node.isRequired,
-    /** Background color */
-    background: PropTypes.string,
-    /** Colour of the text */
-    color: PropTypes.string,
 }
 
 Card.defaultProps = {

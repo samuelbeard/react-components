@@ -1,12 +1,24 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import cn from 'classnames'
 
-const Form = ({ children, className, ...props }) => {
+const Form = ({ color, className, style, children, ...props }) => {
     return (
-        <form {...props} className={cn(`sb-form`)}>
+        <form {...props} style={style} className={cn(`sb-form`, `color-${color}`, className)}>
             {children}
         </form>
     )
+}
+
+Form.propTypes = {
+    color: PropTypes.string,
+    className: PropTypes.string,
+    style: PropTypes.object,
+    children: PropTypes.node.isRequired,
+}
+
+Form.defaultProps = {
+    color: 'default'
 }
 
 export default Form

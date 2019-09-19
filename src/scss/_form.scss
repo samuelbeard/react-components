@@ -1,12 +1,33 @@
-.sb-field {
-    width: 100%;
-    font-size: $base-font-size;
-    margin: auto $spacer;
-    padding: $spacer * 0.8 $spacer * 1.5;
-    border-radius: $base-border-radius;
-    border-width: 1px;
-    border-style: solid;
-    box-shadow: $base-shadow;
+.sb-input-group {
+    padding: $spacer / 2;
+
+    .sb-label {
+        margin-bottom: $spacer;
+        font-size: $base-font-size / 1.1;
+        line-height: 2;
+        padding-left: $spacer;
+
+        &.sb-disabled {
+            color: lighten($color-black, 50%) !important;
+        }
+    }
+
+    .sb-input {
+        display: block;
+        width: 100%;
+        font-size: $base-font-size;
+        padding: $spacer * 0.8 $spacer * 1.5;
+        border-radius: $base-border-radius;
+        border-width: 1px;
+        border-style: solid;
+        box-shadow: $base-shadow;
+
+        &:disabled {
+            color: lighten($color-black, 50%) !important;
+            background: $color-shade !important;
+            border-color: $color-shade !important;
+        }
+    }
 }
 
 select {
