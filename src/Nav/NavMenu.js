@@ -9,8 +9,8 @@ const NavMenu = ({ items, color, className, style, ...props }) => {
             {...props}
             className={cn('sb-nav-menu', `color-${color}`, className)}
         >
-            {items.map(el => (
-                <span>{el}</span>
+            {items.map((el, i) => (
+                <span key={i}>{el}</span>
             ))}
         </div>
     )
