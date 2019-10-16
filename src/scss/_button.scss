@@ -7,10 +7,7 @@
     transition: $base-transition;
     text-decoration: none;
     box-shadow: $base-shadow;
-
-    &.pointer {
-        cursor: pointer;
-    }
+    cursor: pointer;
 
     &.block {
         display: block;
