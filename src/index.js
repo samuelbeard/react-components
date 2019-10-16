@@ -4,6 +4,7 @@ import { Card, CardBody, CardHeader, CardFooter } from './Card'
 import Section from './Section'
 import Button from './Button'
 import { Nav, NavTitle, NavMenu } from './Nav'
+import FadeIn from './FadeIn'
 
 export {
     Countdown,
@@ -19,4 +20,5 @@ export {
     Nav,
     NavTitle,
     NavMenu,
+    FadeIn
 }
