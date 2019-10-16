@@ -1,8 +1,8 @@
-# Countdown
+# React Components
 
-## A React Component
+## A React Component Library
 
-A simple, responsive countdown component for React.
+A simple component library for my projects.
 
 ---
 
@@ -11,19 +11,19 @@ A simple, responsive countdown component for React.
 Install the package
 
 ```sh
-npm install @samuelbeard/card
+npm install @samuelbeard/react-components
 ```
 
 Import the package
 
 ```js
-import { Countdown } from '@samuelbeard/countdown'
+import { Container, Row, Col } from '@samuelbeard/react-components'
 ```
 
 Import the scss into your own scss
 
 ```scss
-@import '~@samuelbeard/react-components/src/scss/base.scss';
+@import "~@samuelbeard/react-components/dist/scss/base.scss";
 ```
 
 ---
