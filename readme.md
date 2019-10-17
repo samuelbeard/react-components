@@ -23,7 +23,7 @@ import { Container, Row, Col } from '@samuelbeard/react-components'
 Import the scss into your own scss
 
 ```scss
-@import "~@samuelbeard/react-components/dist/scss/base.scss";
+@import '~@samuelbeard/react-components/dist/scss/base.scss';
 ```
 
 ---
@@ -53,6 +53,7 @@ Colours are organised by their color names. (`red`, `blue`, etc)
 | NavMenu    | ✅        | ❎         | ✅    | ❎   | ✅       | ✅        | ❎           | ✅      | ✅       |
 | NavTitle   | ✅        | ❎         | ✅    | ❎   | ✅       | ✅        | ❎           | ✅      | ✅       |
 | Section    | ✅        | ✅         | ✅    | ❎   | ✅       |           |              | ✅      | ✅       |
+| FadeIn     | ✅        |            |       |      |  ✅       | ✅          |✅              | ✅        |✅          |
 
 ---
 
