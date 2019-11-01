@@ -4,6 +4,12 @@ img {
     }
 }
 
+/*
+ * Text Aligns
+ * 
+ * Align text with className="text-center"
+ * Align text for just a specific screen size with className="text-center-sm"
+ */
 .text {
     &-right {
         text-align: right;
@@ -108,8 +114,40 @@ img {
     }
 }
 
-// .text-center-xs {
-//     @media (max-width: 576px) and (min-width: 0px) {
-//         text-align: center;
-//     }
-// }
+/*
+ * Hiding Elements
+ *
+ */
+.hidden {
+    display: none;
+
+    &-xs {
+        @media (max-width: 576px) {
+            display: hidden;
+        }
+    }
+
+    &-sm {
+        @media (max-width: 768px) and (min-width: 576px) {
+            display: hidden;
+        }
+    }
+
+    &-md {
+        @media (max-width: 992px) and (min-width: 768px) {
+            display: hidden;
+        }
+    }
+
+    &-lg {
+        @media (max-width: 1200px) and (min-width: 992px) {
+            display: hidden;
+        }
+    }
+
+    &-xl {
+        @media (min-width: 1201px) {
+            display: hidden;
+        }
+    }
+}
