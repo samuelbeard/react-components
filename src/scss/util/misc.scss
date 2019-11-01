@@ -7,13 +7,109 @@ img {
 .text {
     &-right {
         text-align: right;
+
+        &-xs {
+            @media (max-width: 576px) {
+                text-align: right;
+            }
+        }
+
+        &-sm {
+            @media (max-width: 768px) and (min-width: 576px) {
+                text-align: right;
+            }
+        }
+
+        &-md {
+            @media (max-width: 992px) and (min-width: 768px) {
+                text-align: right;
+            }
+        }
+
+        &-lg {
+            @media (max-width: 1200px) and (min-width: 992px) {
+                text-align: right;
+            }
+        }
+
+        &-xl {
+            @media (min-width: 1201px) {
+                text-align: right;
+            }
+        }
     }
 
     &-left {
         text-align: left;
+
+        &-xs {
+            @media (max-width: 576px) {
+                text-align: left;
+            }
+        }
+
+        &-sm {
+            @media (max-width: 768px) and (min-width: 576px) {
+                text-align: left;
+            }
+        }
+
+        &-md {
+            @media (max-width: 992px) and (min-width: 768px) {
+                text-align: left;
+            }
+        }
+
+        &-lg {
+            @media (max-width: 1200px) and (min-width: 992px) {
+                text-align: left;
+            }
+        }
+
+        &-xl {
+            @media (min-width: 1201px) {
+                text-align: left;
+            }
+        }
     }
 
     &-center {
         text-align: center;
+
+        &-xs {
+            @media (max-width: 576px) {
+                text-align: center;
+            }
+        }
+
+        &-sm {
+            @media (max-width: 768px) and (min-width: 576px) {
+                text-align: center;
+            }
+        }
+
+        &-md {
+            @media (max-width: 992px) and (min-width: 768px) {
+                text-align: center;
+            }
+        }
+
+        &-lg {
+            @media (max-width: 1200px) and (min-width: 992px) {
+                text-align: center;
+            }
+        }
+
+        &-xl {
+            @media (min-width: 1201px) {
+                text-align: center;
+            }
+        }
     }
 }
+
+// .text-center-xs {
+//     @media (max-width: 576px) and (min-width: 0px) {
+//         text-align: center;
+//     }
+// }
