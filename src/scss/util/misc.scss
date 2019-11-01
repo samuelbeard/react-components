@@ -123,31 +123,31 @@ img {
 
     &-xs {
         @media (max-width: 576px) {
-            display: hidden;
+            display: none;
         }
     }
 
     &-sm {
         @media (max-width: 768px) and (min-width: 576px) {
-            display: hidden;
+            display: none;
         }
     }
 
     &-md {
         @media (max-width: 992px) and (min-width: 768px) {
-            display: hidden;
+            display: none;
         }
     }
 
     &-lg {
         @media (max-width: 1200px) and (min-width: 992px) {
-            display: hidden;
+            display: none;
         }
     }
 
     &-xl {
         @media (min-width: 1201px) {
-            display: hidden;
+            display: none;
         }
     }
 }
