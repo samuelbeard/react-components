@@ -1,6 +1,6 @@
 {
   "name": "@samuelbeard/react-components",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "Components for React",
   "main": "dist/index.js",
   "scripts": {
