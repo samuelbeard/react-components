@@ -5,6 +5,7 @@ import Section from './Section'
 import Button from './Button'
 import { Nav, NavTitle, NavMenu } from './Nav'
 import FadeIn from './FadeIn'
+import { Form, InputGroup, Input, Label } from './Form'
 
 export {
     Countdown,
@@ -20,5 +21,9 @@ export {
     Nav,
     NavTitle,
     NavMenu,
-    FadeIn
+    FadeIn,
+    Form,
+    InputGroup,
+    Input,
+    Label,
 }
