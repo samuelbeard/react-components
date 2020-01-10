@@ -4,7 +4,11 @@ import cn from 'classnames'
 
 const Form = ({ color, className, style, children, ...props }) => {
     return (
-        <form {...props} style={style} className={cn(`sb-form`, `color-${color}`, className)}>
+        <form
+            {...props}
+            style={style}
+            className={cn(`sb-form`, `color-${color}`, className)}
+        >
             {children}
         </form>
     )
@@ -18,7 +22,7 @@ Form.propTypes = {
 }
 
 Form.defaultProps = {
-    color: 'default'
+    color: 'default',
 }
 
 export default Form

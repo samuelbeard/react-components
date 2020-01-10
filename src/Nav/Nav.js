@@ -3,7 +3,15 @@ import PropTypes from 'prop-types'
 import cn from 'classnames'
 import { Container } from '../Grid'
 
-const Nav = ({ children, background, color, className, fluid, style, ...props }) => {
+const Nav = ({
+    children,
+    background,
+    color,
+    className,
+    fluid,
+    style,
+    ...props
+}) => {
     return (
         <div
             style={{ ...style }}

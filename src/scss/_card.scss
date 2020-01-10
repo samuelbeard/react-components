@@ -6,7 +6,7 @@ $spacing: 10px;
     flex-direction: column;
     min-width: 0;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: $base-border-radius;
     box-shadow: $base-shadow;
     word-wrap: break-word;
@@ -22,7 +22,8 @@ $spacing: 10px;
         border-bottom: 1px solid #efefef;
 
         &:first-child {
-            border-radius: $base-border-radius - 1px $base-border-radius - 1px 0 0;
+            border-radius: $base-border-radius - 1px $base-border-radius - 1px 0
+                0;
         }
     }
 
@@ -30,7 +31,13 @@ $spacing: 10px;
         flex: 1 1 auto;
         padding: 1.25rem;
 
-        h1, h2, h3, h4, h5, h6, p {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
             &:first-child {
                 margin-top: 0;
             }
@@ -48,7 +55,8 @@ $spacing: 10px;
         border-top: 1px solid #efefef;
 
         &:last-child {
-            border-radius: 0 0 $base-border-radius - 1px $base-border-radius - 1px;
+            border-radius: 0 0 $base-border-radius - 1px $base-border-radius -
+                1px;
         }
     }
 }

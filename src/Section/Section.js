@@ -31,7 +31,13 @@ const Section = ({
                 ...style,
             }}
         >
-            <Container style={{...containerStyle}} className={cn(containerClassName)} fluid={fluid}>{children}</Container>
+            <Container
+                style={{ ...containerStyle }}
+                className={cn(containerClassName)}
+                fluid={fluid}
+            >
+                {children}
+            </Container>
         </div>
     )
 }

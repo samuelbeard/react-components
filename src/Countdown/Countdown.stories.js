@@ -1,37 +1,49 @@
-import React from 'react';
+import React from 'react'
 
-import Countdown from './index';
+import Countdown from './index'
 
 export default {
-  title: 'Countdown',
+    title: 'Countdown',
 
-  decorators: [
-    storyFn => <div style={{ textAlign: 'center', marginTop: '25px' }}>{storyFn()}</div>,
-  ],
-};
+    decorators: [
+        storyFn => (
+            <div style={{ textAlign: 'center', marginTop: '25px' }}>
+                {storyFn()}
+            </div>
+        ),
+    ],
+}
 
 export const basic = () => (
-  <>
-    <Countdown d h m s date={new Date('2022/09/04 17:00').getTime()} />
-  </>
-);
+    <>
+        <Countdown d h m s date={new Date('2022/09/04 17:00').getTime()} />
+    </>
+)
 
 basic.story = {
-  name: 'Basic',
-};
+    name: 'Basic',
+}
 
 export const styled = () => (
-  <Countdown d date={new Date('2020/09/04 17:00').getTime()} style={{ fontSize: '30px' }} />
-);
+    <Countdown
+        d
+        date={new Date('2020/09/04 17:00').getTime()}
+        style={{ fontSize: '30px' }}
+    />
+)
 
 styled.story = {
-  name: 'Styled',
-};
+    name: 'Styled',
+}
 
 export const customLabel = () => (
-  <Countdown d daysText="ddaaayyss" date={new Date('2020/09/04 17:00').getTime()} />
-);
+    <Countdown
+        d
+        daysText="ddaaayyss"
+        date={new Date('2020/09/04 17:00').getTime()}
+    />
+)
 
 customLabel.story = {
-  name: 'Custom Label',
-};
+    name: 'Custom Label',
+}
